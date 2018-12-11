@@ -19,7 +19,7 @@ from . import views
 from django.conf.urls import url
 
 urlpatterns = [
-    path('api/', include('main.urls')),
+    path('api/', include('filmconnx.urls')),
     path('admin/', admin.site.urls),
     url(r'^$', views.FrontendAppView.as_view())
 
