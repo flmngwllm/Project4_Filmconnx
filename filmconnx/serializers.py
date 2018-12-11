@@ -1,15 +1,20 @@
 from rest_framework import serializers
 
-from .models import Artist,
+from .models import Jobs, Poster, User
 
-
-class SongSerializer(serializers.ModelSerializer):
+class UserSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Song
-        fields = ('id', 'title', 'album', 'preview_url', 'artist')
+        model = User
+        fields = ('id', 'name', 'photo', 'location', 'projects', 'zipcode', 'bio', 'job_title', 'union',
+                  'imbd', 'availability', 'resume', 'department', 'afiliated_groups')
 
-class ArtistSerializer(serializers.ModelSerializer):
-    songs = SongSerializer(many=True, read_only=True)
+class JobsSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Artist
-        fields = ('id', 'name', 'photo_url', 'nationality', 'songs')
+        model = Jobs
+        fields = ('id', 'location', 'company', 'description', 'date', 'compensation', 'poster')
+
+class PosterSerializer(serializers.ModelSerializer):
+    jobs = JobsSerializer(many=True, read_only=True)
+    class Meta:
+        model = Poster
+        fields = ('id', 'company', 'image', 'jobs')
