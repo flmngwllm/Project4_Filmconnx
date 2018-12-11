@@ -21,9 +21,19 @@ class User(models.Model):
 
 
 
+class Position(models.Model):
+    name = models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.name
+
+
 class Poster(models.Model):
+    name = models.CharField(max_length=255)
     image = models.CharField(max_length=255)
     company = models.CharField(max_length=400)
+    position = models.ForeignKey(Position,on_delete=models.CASCADE, related_name='positions')
+
 
     def __str__(self):
         return self.name
