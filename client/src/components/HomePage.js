@@ -3,6 +3,22 @@ import axios from 'axios'
 
 class HomePage extends Component {
 
+    state = {
+
+        jobs: []
+    }
+
+    componentDidMount() {
+
+        axios.get('/api/jobs')
+             .then((res) => {
+
+                this.setState({
+                    jobs: res.data
+                })
+                console.log(res.data)
+             })
+    }
 
     render() {
         return (
