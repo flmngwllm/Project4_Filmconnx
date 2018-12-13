@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container,Col,Form,FormGroup,Label,Input,Button,FormText,
 FormFeedback } from "reactstrap";
+import './LoginPage.css';
 
 class LoginPage extends Component {
     constructor(props) {
