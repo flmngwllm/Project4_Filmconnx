@@ -4,6 +4,8 @@ class ApplicantPage extends Component {
     render() {
         return (
             <div>
+
+                Applicant
                 
             </div>
         );
