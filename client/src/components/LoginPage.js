@@ -44,7 +44,7 @@ class LoginPage extends Component {
     render() {
       const { email, password } = this.state;
       return (
-        <Container className="App">
+        <Container className="App" className="grid-container" >
           <h2>Sign In</h2>
           <Form className="form" onSubmit={ (e) => this.submitForm(e) }>
             <Col>
