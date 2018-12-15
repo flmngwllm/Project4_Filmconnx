@@ -2,6 +2,15 @@ import React from 'react';
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 
 export default class Example extends React.Component {
+  state = {
+    email: '',
+    password: '',
+    name:'',
+    image:'',
+    company:''
+}
+
+h
   render() {
     return (
       <Form>
@@ -37,34 +46,7 @@ export default class Example extends React.Component {
           <Label for="exampleTime">Time</Label>
           <Input type="time" name="time" id="exampleTime" placeholder="time placeholder" />
         </FormGroup>
-        <FormGroup>
-          <Label for="exampleColor">Color</Label>
-          <Input type="color" name="color" id="exampleColor" placeholder="color placeholder" />
-        </FormGroup>
-        <FormGroup>
-          <Label for="exampleSearch">Search</Label>
-          <Input type="search" name="search" id="exampleSearch" placeholder="search placeholder" />
-        </FormGroup>
-        <FormGroup>
-          <Label for="exampleSelect">Select</Label>
-          <Input type="select" name="select" id="exampleSelect">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </Input>
-        </FormGroup>
-        <FormGroup>
-          <Label for="exampleSelectMulti">Select Multiple</Label>
-          <Input type="select" name="selectMulti" id="exampleSelectMulti" multiple>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </Input>
-        </FormGroup>
+       
         <FormGroup>
           <Label for="exampleText">Text Area</Label>
           <Input type="textarea" name="text" id="exampleText" />
@@ -77,18 +59,8 @@ export default class Example extends React.Component {
             It's a bit lighter and easily wraps to a new line.
           </FormText>
         </FormGroup>
-        <FormGroup check>
-          <Label check>
-            <Input type="radio" />{' '}
-            Option one is this and that—be sure to include why it's great
-          </Label>
-        </FormGroup>
-        <FormGroup check>
-          <Label check>
-            <Input type="checkbox" />{' '}
-            Check me out
-          </Label>
-        </FormGroup>
+        
+        
       </Form>
     );
   }
