@@ -4,6 +4,7 @@ import HomePage from './components/HomePage';
 import Nav from './components/Nav';
 import LoginPage from './components/LoginPage';
 import ApplicantPage from './components/ApplicantPage';
+import SignUp from './components/SignUp';
 
 
 class App extends Component {
@@ -21,6 +22,7 @@ class App extends Component {
              <Route exact path="/" component={HomePage}></Route>
              <Route exact path ="/loginpage" component={LoginPage}></Route> 
              <Route exact path ="/applicants" component ={ApplicantPage}></Route>
+             <Route exact path ="/signup" component = {SignUp}></Route>
 
           </Switch>
       </div>
