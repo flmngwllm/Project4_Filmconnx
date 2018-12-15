@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom'
 import HomePage from './components/HomePage';
-import Navbar from './components/Navbar';
+import Nav from './components/Nav';
 import LoginPage from './components/LoginPage';
 import ApplicantPage from './components/ApplicantPage';
 
@@ -14,7 +14,7 @@ class App extends Component {
     return (
       <Router> 
       <div>
-        <Navbar/>
+        <Nav/>
           <Switch>
 
              {/* <Route exact path="/login" component={Login}></Route> */}

@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b9a0534-7bca-4ff6-b061-8923e0f4a939" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/463d510d-0b69-40c8-9200-fc0d5fedf4d4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/463d510d-0b69-40c8-9200-fc0d5fedf4d4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/463d510d-0b69-40c8-9200-fc0d5fedf4d4/storage_v2/_src_/database/film_database.1kHgcw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/463d510d-0b69-40c8-9200-fc0d5fedf4d4/storage_v2/_src_/database/film_database.1kHgcw/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filmconnx/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/filmconnx/serializers.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +58,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manage.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -67,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/filmconnx/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="318">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
             </state>
           </provider>
         </entry>
@@ -84,7 +85,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project4/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
+            <state relative-caret-position="255">
               <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
@@ -93,104 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="uml://DATABASE/463d510d-0b69-40c8-9200-fc0d5fedf4d4">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>DATABASE</ID>
-              <OriginalElement>463d510d-0b69-40c8-9200-fc0d5fedf4d4</OriginalElement>
-              <nodes>
-                <node x="559.0" y="719.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.django_migrations</node>
-                <node x="411.2175925925926" y="523.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_user_user_permissions</node>
-                <node x="28.0" y="719.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.filmconnx_position</node>
-                <node x="16.0" y="843.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.filmconnx_poster</node>
-                <node x="6.25" y="245.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_group</node>
-                <node x="273.0" y="719.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.filmconnx_user</node>
-                <node x="866.0" y="719.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.django_session</node>
-                <node x="637.2175925925926" y="468.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.django_admin_log</node>
-                <node x="190.6388888888889" y="223.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_permission</node>
-                <node x="0.0" y="1033.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.filmconnx_jobs</node>
-                <node x="525.9537037037037" y="0.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.django_content_type</node>
-                <node x="226.70370370370372" y="523.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_user_groups</node>
-                <node x="0.0" y="523.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_group_permissions</node>
-                <node x="421.2175925925926" y="146.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_user</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_group_permissions" target="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_group">
-                  <point x="-47.25" y="-48.0" />
-                  <point x="-41.0" y="37.0" />
-                </edge>
-                <edge source="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_user_groups" target="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_group">
-                  <point x="-38.75" y="-48.0" />
-                  <point x="265.4537037037037" y="438.0" />
-                  <point x="129.25" y="438.0" />
-                  <point x="41.0" y="37.0" />
-                </edge>
-                <edge source="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.filmconnx_poster" target="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.filmconnx_position">
-                  <point x="0.0" y="-70.0" />
-                  <point x="0.0" y="37.0" />
-                </edge>
-                <edge source="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_permission" target="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.django_content_type">
-                  <point x="0.0" y="-59.0" />
-                  <point x="291.6388888888889" y="121.0" />
-                  <point x="574.9537037037037" y="121.0" />
-                  <point x="-49.0" y="48.0" />
-                </edge>
-                <edge source="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.django_admin_log" target="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.django_content_type">
-                  <point x="72.5" y="-103.0" />
-                  <point x="854.7175925925926" y="121.0" />
-                  <point x="672.9537037037037" y="121.0" />
-                  <point x="49.0" y="48.0" />
-                </edge>
-                <edge source="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_user_user_permissions" target="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_user">
-                  <point x="51.5" y="-48.0" />
-                  <point x="0.0" y="136.0" />
-                </edge>
-                <edge source="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_user_groups" target="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_user">
-                  <point x="38.75" y="-48.0" />
-                  <point x="342.9537037037037" y="448.0" />
-                  <point x="469.3842592592593" y="448.0" />
-                  <point x="-96.33333333333331" y="136.0" />
-                </edge>
-                <edge source="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.django_admin_log" target="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_user">
-                  <point x="-72.5" y="-103.0" />
-                  <point x="709.7175925925926" y="448.0" />
-                  <point x="662.0509259259259" y="448.0" />
-                  <point x="96.33333333333331" y="136.0" />
-                </edge>
-                <edge source="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.filmconnx_jobs" target="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.filmconnx_poster">
-                  <point x="0.0" y="-92.0" />
-                  <point x="0.0" y="70.0" />
-                </edge>
-                <edge source="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_group_permissions" target="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_permission">
-                  <point x="47.25" y="-48.0" />
-                  <point x="141.75" y="448.0" />
-                  <point x="241.1388888888889" y="448.0" />
-                  <point x="-50.5" y="59.0" />
-                </edge>
-                <edge source="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_user_user_permissions" target="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_permission">
-                  <point x="-51.5" y="-48.0" />
-                  <point x="462.7175925925926" y="438.0" />
-                  <point x="342.1388888888889" y="438.0" />
-                  <point x="50.5" y="59.0" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.8" x="295.875" y="841.875" />
-              <SelectedNodes />
-              <Categories>
-                <Category>Key columns</Category>
-                <Category>Columns</Category>
-              </Categories>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/filmconnx/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="15" lean-forward="true" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+            <state relative-caret-position="135">
+              <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -201,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project4/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-190">
-              <caret line="92" column="1" lean-forward="true" selection-start-line="92" selection-start-column="1" selection-end-line="92" selection-end-column="1" />
+            <state relative-caret-position="1380">
+              <caret line="92" column="1" selection-start-line="92" selection-start-column="1" selection-end-line="92" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -210,8 +118,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/filmconnx/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="225">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -227,7 +135,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/filmconnx/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
+            <state relative-caret-position="60">
               <caret line="5" selection-start-line="5" selection-end-line="5" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
@@ -260,7 +168,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
@@ -270,28 +178,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Project4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project4" type="462c0819:PsiDirectoryNode" />
-              <item name="filmconnx" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project4" type="462c0819:PsiDirectoryNode" />
-              <item name="Project4" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -350,24 +238,20 @@
       <option name="presentableId" value="Default" />
       <updated>1544481027361</updated>
       <workItem from="1544481029245" duration="11419000" />
+      <workItem from="1544819100591" duration="303000" />
+      <workItem from="1544831139802" duration="558000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11419000" />
+    <option name="totallyTimeSpent" value="12280000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24248926" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -375,123 +259,31 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Database" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.3297568" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/463d510d-0b69-40c8-9200-fc0d5fedf4d4/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/463d510d-0b69-40c8-9200-fc0d5fedf4d4/console.sql" />
     <entry file="file://$PROJECT_DIR$/filmconnx/migrations/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="uml://DATABASE/463d510d-0b69-40c8-9200-fc0d5fedf4d4.DATABASE:film_database">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>463d510d-0b69-40c8-9200-fc0d5fedf4d4.DATABASE:film_database</OriginalElement>
-          <nodes>
-            <node x="488.375" y="523.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_user_user_permissions</node>
-            <node x="307.0" y="719.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.django_session</node>
-            <node x="524.162037037037" y="245.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_group</node>
-            <node x="344.2777777777777" y="0.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.django_content_type</node>
-            <node x="313.375" y="523.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_user_groups</node>
-            <node x="213.63425925925924" y="146.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_user</node>
-            <node x="718.3842592592592" y="523.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_group_permissions</node>
-            <node x="0.0" y="468.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.django_admin_log</node>
-            <node x="708.162037037037" y="223.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_permission</node>
-            <node x="0.0" y="719.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.django_migrations</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_user_groups" target="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_group">
-              <point x="38.75" y="-48.0" />
-              <point x="429.625" y="448.0" />
-              <point x="565.162037037037" y="448.0" />
-              <point x="-41.0" y="37.0" />
-            </edge>
-            <edge source="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_group_permissions" target="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_group">
-              <point x="-47.25" y="-48.0" />
-              <point x="765.6342592592592" y="438.0" />
-              <point x="647.162037037037" y="438.0" />
-              <point x="41.0" y="37.0" />
-            </edge>
-            <edge source="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_permission" target="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.django_content_type">
-              <point x="0.0" y="-59.0" />
-              <point x="809.162037037037" y="121.0" />
-              <point x="491.2777777777777" y="121.0" />
-              <point x="49.0" y="48.0" />
-            </edge>
-            <edge source="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.django_admin_log" target="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.django_content_type">
-              <point x="-72.5" y="-103.0" />
-              <point x="72.5" y="121.0" />
-              <point x="393.2777777777777" y="121.0" />
-              <point x="-49.0" y="48.0" />
-            </edge>
-            <edge source="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_user_user_permissions" target="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_user">
-              <point x="-51.5" y="-48.0" />
-              <point x="539.875" y="438.0" />
-              <point x="454.46759259259255" y="438.0" />
-              <point x="96.33333333333331" y="136.0" />
-            </edge>
-            <edge source="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_user_groups" target="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_user">
-              <point x="-38.75" y="-48.0" />
-              <point x="352.125" y="448.0" />
-              <point x="358.13425925925924" y="448.0" />
-              <point x="0.0" y="136.0" />
-            </edge>
-            <edge source="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.django_admin_log" target="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_user">
-              <point x="72.5" y="-103.0" />
-              <point x="217.5" y="448.0" />
-              <point x="261.8009259259259" y="448.0" />
-              <point x="-96.33333333333331" y="136.0" />
-            </edge>
-            <edge source="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_group_permissions" target="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_permission">
-              <point x="47.25" y="-48.0" />
-              <point x="50.5" y="59.0" />
-            </edge>
-            <edge source="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_user_user_permissions" target="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_permission">
-              <point x="51.5" y="-48.0" />
-              <point x="642.875" y="448.0" />
-              <point x="758.662037037037" y="448.0" />
-              <point x="-50.5" y="59.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.6133190118152524" x="371.3134851138354" y="371.3134851138354" />
-          <SelectedNodes>
-            <node>463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.django_content_type</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://463d510d-0b69-40c8-9200-fc0d5fedf4d4/role/filmconnx">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://463d510d-0b69-40c8-9200-fc0d5fedf4d4/database/film_database/schema/public/sequence/django_migrations_id_seq">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://463d510d-0b69-40c8-9200-fc0d5fedf4d4/database/film_database/schema/public/sequence/django_content_type_id_seq">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="uml://DATABASE/463d510d-0b69-40c8-9200-fc0d5fedf4d4.DATABASE:film_database" />
+    <entry file="das://463d510d-0b69-40c8-9200-fc0d5fedf4d4/role/filmconnx" />
+    <entry file="das://463d510d-0b69-40c8-9200-fc0d5fedf4d4/database/film_database/schema/public/sequence/django_migrations_id_seq" />
+    <entry file="das://463d510d-0b69-40c8-9200-fc0d5fedf4d4/database/film_database/schema/public/sequence/django_content_type_id_seq" />
     <entry file="file://$PROJECT_DIR$/Project4/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -552,57 +344,11 @@
     <entry file="file://$PROJECT_DIR$/filmconnx/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/filmconnx/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="15" lean-forward="true" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filmconnx/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filmconnx/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="uml://DATABASE/463d510d-0b69-40c8-9200-fc0d5fedf4d4" />
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project4/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-190">
-          <caret line="92" column="1" lean-forward="true" selection-start-line="92" selection-start-column="1" selection-end-line="92" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filmconnx/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filmconnx/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
         </state>
       </provider>
     </entry>
@@ -611,7 +357,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Project4/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
+        <state relative-caret-position="255">
           <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
@@ -619,94 +365,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="uml://DATABASE/463d510d-0b69-40c8-9200-fc0d5fedf4d4">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>463d510d-0b69-40c8-9200-fc0d5fedf4d4</OriginalElement>
-          <nodes>
-            <node x="559.0" y="719.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.django_migrations</node>
-            <node x="411.2175925925926" y="523.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_user_user_permissions</node>
-            <node x="28.0" y="719.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.filmconnx_position</node>
-            <node x="16.0" y="843.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.filmconnx_poster</node>
-            <node x="6.25" y="245.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_group</node>
-            <node x="273.0" y="719.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.filmconnx_user</node>
-            <node x="866.0" y="719.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.django_session</node>
-            <node x="637.2175925925926" y="468.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.django_admin_log</node>
-            <node x="190.6388888888889" y="223.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_permission</node>
-            <node x="0.0" y="1033.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.filmconnx_jobs</node>
-            <node x="525.9537037037037" y="0.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.django_content_type</node>
-            <node x="226.70370370370372" y="523.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_user_groups</node>
-            <node x="0.0" y="523.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_group_permissions</node>
-            <node x="421.2175925925926" y="146.0">463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_user</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_group_permissions" target="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_group">
-              <point x="-47.25" y="-48.0" />
-              <point x="-41.0" y="37.0" />
-            </edge>
-            <edge source="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_user_groups" target="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_group">
-              <point x="-38.75" y="-48.0" />
-              <point x="265.4537037037037" y="438.0" />
-              <point x="129.25" y="438.0" />
-              <point x="41.0" y="37.0" />
-            </edge>
-            <edge source="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.filmconnx_poster" target="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.filmconnx_position">
-              <point x="0.0" y="-70.0" />
-              <point x="0.0" y="37.0" />
-            </edge>
-            <edge source="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_permission" target="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.django_content_type">
-              <point x="0.0" y="-59.0" />
-              <point x="291.6388888888889" y="121.0" />
-              <point x="574.9537037037037" y="121.0" />
-              <point x="-49.0" y="48.0" />
-            </edge>
-            <edge source="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.django_admin_log" target="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.django_content_type">
-              <point x="72.5" y="-103.0" />
-              <point x="854.7175925925926" y="121.0" />
-              <point x="672.9537037037037" y="121.0" />
-              <point x="49.0" y="48.0" />
-            </edge>
-            <edge source="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_user_user_permissions" target="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_user">
-              <point x="51.5" y="-48.0" />
-              <point x="0.0" y="136.0" />
-            </edge>
-            <edge source="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_user_groups" target="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_user">
-              <point x="38.75" y="-48.0" />
-              <point x="342.9537037037037" y="448.0" />
-              <point x="469.3842592592593" y="448.0" />
-              <point x="-96.33333333333331" y="136.0" />
-            </edge>
-            <edge source="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.django_admin_log" target="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_user">
-              <point x="-72.5" y="-103.0" />
-              <point x="709.7175925925926" y="448.0" />
-              <point x="662.0509259259259" y="448.0" />
-              <point x="96.33333333333331" y="136.0" />
-            </edge>
-            <edge source="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.filmconnx_jobs" target="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.filmconnx_poster">
-              <point x="0.0" y="-92.0" />
-              <point x="0.0" y="70.0" />
-            </edge>
-            <edge source="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_group_permissions" target="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_permission">
-              <point x="47.25" y="-48.0" />
-              <point x="141.75" y="448.0" />
-              <point x="241.1388888888889" y="448.0" />
-              <point x="-50.5" y="59.0" />
-            </edge>
-            <edge source="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_user_user_permissions" target="463d510d-0b69-40c8-9200-fc0d5fedf4d4.TABLE:film_database.public.auth_permission">
-              <point x="-51.5" y="-48.0" />
-              <point x="462.7175925925926" y="438.0" />
-              <point x="342.1388888888889" y="438.0" />
-              <point x="50.5" y="59.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.8" x="295.875" y="841.875" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
+    <entry file="file://$PROJECT_DIR$/filmconnx/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project4/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1380">
+          <caret line="92" column="1" selection-start-line="92" selection-start-column="1" selection-end-line="92" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filmconnx/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filmconnx/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filmconnx/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filmconnx/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
         </state>
       </provider>
     </entry>

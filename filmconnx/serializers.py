@@ -17,4 +17,5 @@ class PosterSerializer(serializers.ModelSerializer):
     jobs = JobsSerializer(many=True, read_only=True)
     class Meta:
         model = Poster
-        fields = ('id', 'email','password', 'company', 'image', 'jobs')
+        fields = ('id', 'email','password', 'name', 'company', 'image', 'jobs', )
+
