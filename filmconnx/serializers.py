@@ -12,7 +12,7 @@ class JobsSerializer(serializers.ModelSerializer):
     user = UserSerializer(many=True, read_only=True)
     class Meta:
         model = Jobs
-        fields = ('id', 'location', 'company', 'description', 'time', 'compensation', 'poster')
+        fields = ('id', 'location', 'company', 'description', 'time', 'compensation', 'poster','user')
 
 class PosterSerializer(serializers.ModelSerializer):
     jobs = JobsSerializer(many=True, read_only=True)
