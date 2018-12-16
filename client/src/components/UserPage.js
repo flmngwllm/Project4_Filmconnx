@@ -7,8 +7,7 @@ class UserPage extends Component {
         poster:{},
         jobs: {},
         user:{}
-
-    }
+                }
 
     componentDidMount() {
 

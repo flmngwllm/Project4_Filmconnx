@@ -9,6 +9,7 @@ class UserSerializer(serializers.ModelSerializer):
                   'imbd', 'availability', 'resume', 'department', 'afiliated_groups')
 
 class JobsSerializer(serializers.ModelSerializer):
+    user = UserSerializer(many=True, read_only=True)
     class Meta:
         model = Jobs
         fields = ('id', 'location', 'company', 'description', 'time', 'compensation', 'poster')
