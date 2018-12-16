@@ -4,6 +4,11 @@ class JobPosting extends Component {
     render() {
         return (
             <div>
+
+
+
+
+                
                 
             </div>
         );

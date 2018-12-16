@@ -3,11 +3,12 @@ import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import { withRouter } from 'react-router-dom'
 import axios from 'axios'
 import styled from 'styled-components'
+import './SignUP.css';
 
-const Postion = styled.div`
-display: flex;
-  justify-content: center;
-  `
+// const Postion = styled.div`
+// display: flex;
+//   justify-content: center;
+//   `
 
 export default class Example extends React.Component {
 
@@ -40,9 +41,9 @@ handleSubmit = (event) => {
 
   render() {
     return (
-      <Postion>
+      <div className = 'signup' >
       <Form onSubmit={this.handleSubmit}>       
-        <FormGroup>
+        <FormGroup >
           <Label htmlfor="email">Email</Label>
           <Input onChange={this.handleChange} value={this.state.email} type="email" name="email"  placeholder="email" />
         </FormGroup>
@@ -63,15 +64,17 @@ handleSubmit = (event) => {
           <Input onChange={this.handleChange} value={this.state.company} type="" name="company" id="" placeholder="company placeholder" />
         </FormGroup>        
         <FormGroup>
-          <Label htmlfor="File">File</Label>
-          <Input type="file" name="file" id="exampleFile" />
+          {/* <Label htmlfor="File">File</Label>
+          <Input type="file" name="file" id="exampleFile" /> */}
          
           <Button color="danger" type="submit">Submit</Button>
         </FormGroup>
         
         
       </Form>
-      </Postion>
+
+      </div>
+     
     );
   }
 }
