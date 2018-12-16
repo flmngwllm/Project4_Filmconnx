@@ -1,67 +1,77 @@
 import React from 'react';
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { withRouter } from 'react-router-dom'
+import axios from 'axios'
+import styled from 'styled-components'
+
+const Postion = styled.div`
+display: flex;
+  justify-content: center;
+  `
 
 export default class Example extends React.Component {
+
+
+  
   state = {
     email: '',
     password: '',
+    website: '',
     name:'',
     image:'',
     company:''
 }
 
-h
+handleChange = (event) =>{
+  const {name,value} = event.target
+  this.setState({[name]:value})
+}
+handleSubmit = (event) => {
+  event.preventDefault()
+
+  axios.post('/api/poster', this.state).then(res =>{
+   this.props.history.push(`/poster/${res.data._id}`)
+
+  })
+}
+
+
+
+
   render() {
     return (
-      <Form>
+      <Postion>
+      <Form onSubmit={this.handleSubmit}>       
         <FormGroup>
-          <Label for="exampleEmail">Plain Text (Static)</Label>
-          <Input plaintext>Some plain text/ static value</Input>
+          <Label htmlfor="email">Email</Label>
+          <Input onChange={this.handleChange} value={this.state.email} type="email" name="email"  placeholder="email" />
         </FormGroup>
         <FormGroup>
-          <Label for="exampleEmail">Email</Label>
-          <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
+          <Label htmlfor="password">Password</Label>
+          <Input onChange={this.handleChange} value={this.state.password} type="password" name="password" id="" placeholder="password" />
         </FormGroup>
         <FormGroup>
-          <Label for="examplePassword">Password</Label>
-          <Input type="password" name="password" id="examplePassword" placeholder="password placeholder" />
+          <Label htmlfor="name">Name</Label>
+          <Input onChange={this.handleChange} value={this.state.name} type="name" name="name"  placeholder="name" />
         </FormGroup>
         <FormGroup>
-          <Label for="exampleUrl">Url</Label>
-          <Input type="url" name="url" id="exampleUrl" placeholder="url placeholder" />
+          <Label htmlfor="website">Website</Label>
+          <Input onChange={this.handleChange} value={this.state.website}  type="website" name="website" id="" placeholder="website" />
         </FormGroup>
+        <FormGroup>          
+          <Label htmlfor="company">Company</Label>
+          <Input onChange={this.handleChange} value={this.state.company} type="" name="company" id="" placeholder="company placeholder" />
+        </FormGroup>        
         <FormGroup>
-          <Label for="exampleNumber">Number</Label>
-          <Input type="number" name="number" id="exampleNumber" placeholder="number placeholder" />
-        </FormGroup>
-        <FormGroup>
-          <Label for="exampleDatetime">Datetime</Label>
-          <Input type="datetime" name="datetime" id="exampleDatetime" placeholder="datetime placeholder" />
-        </FormGroup>
-        <FormGroup>
-          <Label for="exampleDate">Date</Label>
-          <Input type="date" name="date" id="exampleDate" placeholder="date placeholder" />
-        </FormGroup>
-        <FormGroup>
-          <Label for="exampleTime">Time</Label>
-          <Input type="time" name="time" id="exampleTime" placeholder="time placeholder" />
-        </FormGroup>
-       
-        <FormGroup>
-          <Label for="exampleText">Text Area</Label>
-          <Input type="textarea" name="text" id="exampleText" />
-        </FormGroup>
-        <FormGroup>
-          <Label for="exampleFile">File</Label>
+          <Label htmlfor="File">File</Label>
           <Input type="file" name="file" id="exampleFile" />
-          <FormText color="muted">
-            This is some placeholder block-level help text for the above input.
-            It's a bit lighter and easily wraps to a new line.
-          </FormText>
+         
+          <Button color="danger" type="submit">Submit</Button>
         </FormGroup>
         
         
       </Form>
+      </Postion>
     );
   }
 }
