@@ -4,6 +4,10 @@
     <list default="true" id="3b9a0534-7bca-4ff6-b061-8923e0f4a939" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/filmconnx/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/filmconnx/serializers.py" afterDir="false" />
+>>>>>>> 7c1458eb174bfa629449eb3d55c30572d1af052a
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,6 +90,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/filmconnx/urls.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -94,6 +99,13 @@
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/filmconnx/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+>>>>>>> 7c1458eb174bfa629449eb3d55c30572d1af052a
             </state>
           </provider>
         </entry>
@@ -106,8 +118,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project4/views.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="90">
               <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+=======
+            <state relative-caret-position="255">
+              <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+>>>>>>> 7c1458eb174bfa629449eb3d55c30572d1af052a
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -118,8 +135,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project4/urls.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="345">
               <caret line="26" selection-start-line="26" selection-end-line="26" />
+=======
+            <state relative-caret-position="135">
+              <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+>>>>>>> 7c1458eb174bfa629449eb3d55c30572d1af052a
               <folding>
                 <element signature="e#632#664#0" expanded="true" />
               </folding>
@@ -130,8 +152,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project4/settings.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="495">
               <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+=======
+            <state relative-caret-position="1380">
+              <caret line="92" column="1" selection-start-line="92" selection-start-column="1" selection-end-line="92" selection-end-column="1" />
+>>>>>>> 7c1458eb174bfa629449eb3d55c30572d1af052a
             </state>
           </provider>
         </entry>
@@ -139,8 +166,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/filmconnx/views.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="195">
               <caret line="16" column="37" selection-start-line="6" selection-end-line="16" selection-end-column="37" />
+=======
+            <state relative-caret-position="225">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+>>>>>>> 7c1458eb174bfa629449eb3d55c30572d1af052a
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -151,8 +183,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/filmconnx/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="255">
               <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+=======
+            <state relative-caret-position="60">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+>>>>>>> 7c1458eb174bfa629449eb3d55c30572d1af052a
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -184,16 +221,24 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="1">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="824" />
+=======
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="877" />
+>>>>>>> 7c1458eb174bfa629449eb3d55c30572d1af052a
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -221,6 +266,9 @@
           <select />
         </subPane>
       </pane>
+=======
+      <pane id="ProjectPane" />
+>>>>>>> 7c1458eb174bfa629449eb3d55c30572d1af052a
       <pane id="Scope" />
     </panes>
   </component>
@@ -279,18 +327,31 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544481027361</updated>
+<<<<<<< HEAD
       <workItem from="1544481029245" duration="15076000" />
       <workItem from="1544838752879" duration="2258000" />
       <workItem from="1544963346791" duration="213000" />
+=======
+      <workItem from="1544481029245" duration="11419000" />
+      <workItem from="1544819100591" duration="303000" />
+      <workItem from="1544831139802" duration="558000" />
+>>>>>>> 7c1458eb174bfa629449eb3d55c30572d1af052a
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="17547000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="824" extended-state="1" />
     <editor active="true" />
+=======
+    <option name="totallyTimeSpent" value="12280000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
+>>>>>>> 7c1458eb174bfa629449eb3d55c30572d1af052a
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -319,12 +380,11 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/463d510d-0b69-40c8-9200-fc0d5fedf4d4/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/463d510d-0b69-40c8-9200-fc0d5fedf4d4/console.sql" />
     <entry file="file://$PROJECT_DIR$/filmconnx/migrations/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+<<<<<<< HEAD
     <entry file="uml://DATABASE/463d510d-0b69-40c8-9200-fc0d5fedf4d4.DATABASE:film_database">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -412,6 +472,29 @@
     <entry file="das://463d510d-0b69-40c8-9200-fc0d5fedf4d4/role/filmconnx" />
     <entry file="das://463d510d-0b69-40c8-9200-fc0d5fedf4d4/database/film_database/schema/public/sequence/django_migrations_id_seq" />
     <entry file="das://463d510d-0b69-40c8-9200-fc0d5fedf4d4/database/film_database/schema/public/sequence/django_content_type_id_seq" />
+=======
+    <entry file="uml://DATABASE/463d510d-0b69-40c8-9200-fc0d5fedf4d4.DATABASE:film_database" />
+    <entry file="das://463d510d-0b69-40c8-9200-fc0d5fedf4d4/role/filmconnx" />
+    <entry file="das://463d510d-0b69-40c8-9200-fc0d5fedf4d4/database/film_database/schema/public/sequence/django_migrations_id_seq" />
+    <entry file="das://463d510d-0b69-40c8-9200-fc0d5fedf4d4/database/film_database/schema/public/sequence/django_content_type_id_seq" />
+    <entry file="file://$PROJECT_DIR$/Project4/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding>
+            <element signature="e#632#664#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="114" column="6" selection-start-line="114" selection-start-column="6" selection-end-line="114" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 7c1458eb174bfa629449eb3d55c30572d1af052a
     <entry file="file://$PROJECT_DIR$/filmconnx/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -435,6 +518,23 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/filmconnx/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="15" lean-forward="true" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filmconnx/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="uml://DATABASE/463d510d-0b69-40c8-9200-fc0d5fedf4d4" />
+>>>>>>> 7c1458eb174bfa629449eb3d55c30572d1af052a
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -443,6 +543,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project4/wsgi.py">
+<<<<<<< HEAD
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="uml://DATABASE/463d510d-0b69-40c8-9200-fc0d5fedf4d4">
@@ -565,12 +666,61 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="4" selection-end-column="41" />
+=======
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project4/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filmconnx/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project4/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1380">
+          <caret line="92" column="1" selection-start-line="92" selection-start-column="1" selection-end-line="92" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filmconnx/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filmconnx/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filmconnx/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+>>>>>>> 7c1458eb174bfa629449eb3d55c30572d1af052a
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/client/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -650,6 +800,12 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/filmconnx/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+>>>>>>> 7c1458eb174bfa629449eb3d55c30572d1af052a
         </state>
       </provider>
     </entry>
