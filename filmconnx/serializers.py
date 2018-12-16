@@ -15,7 +15,7 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ('id', 'name', 'email','password', 'photo', 'location', 'projects', 'zipcode', 'bio', 'job_title', 'union',
-                  'imbd', 'availability', 'resume', 'department', 'afiliated_groups' 'jobs')        
+                  'imbd', 'availability', 'resume', 'department', 'afiliated_groups', 'jobs')        
 
 class PosterSerializer(serializers.ModelSerializer):
     jobs = JobsSerializer(many=True, read_only=True)
