@@ -1,9 +1,11 @@
 import React from 'react';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import './LoginPage.css';
 
 export default class Example extends React.Component {
   render() {
     return (
+      <div className = 'login' >
       <Form inline>
         <FormGroup>
           <Label for="exampleEmail" hidden>Email</Label>
@@ -16,7 +18,7 @@ export default class Example extends React.Component {
         </FormGroup>
         {' '}
         <Button>Submit</Button>
-      </Form>
+      </Form></div>
     );
   }
 }

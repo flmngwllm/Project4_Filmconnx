@@ -1,14 +1,8 @@
-.form {
-    display: flex;
-    justify-content: center;
-    padding: 1em;
-  }
-  
-  label {
-    display: flex;
-    font-weight: 600;
-  }
-  
-  button {
-    justify-content: flex-end;
-  }
+.login{
+
+  display: flex;
+
+justify-content:center;
+align-items:center;
+
+}
