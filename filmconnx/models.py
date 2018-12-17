@@ -42,8 +42,8 @@ class Jobs(models.Model):
     description = models.CharField(max_length=400)
     time = models.DateTimeField(null=True, blank=True)
     compensation = models.CharField(max_length=400)
-    poster = models.ForeignKey(Poster, on_delete=models.CASCADE, related_name='posters')
-    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, related_name='users')
+    poster = models.ForeignKey(Poster, on_delete=models.CASCADE, related_name='jobs')
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, related_name='user_jobs')
     
     
 
