@@ -1,24 +1,26 @@
 import React, { Component } from 'react';
 import axios from 'axios'
-import { Link } from 'react-router-dom';
+
 
 class UserPage extends Component {
 
     state = {
         poster:{}
         
-                }
+    }
 
     componentDidMount() {
         const posterId = this.props.match.params.id;
         this.fetchPoster(posterId)
+        console.log(posterId)
     }
 
     fetchPoster = async (posterId) => {
-        try{
-            const artistResponse = await axios.get(`/api/poster/${posterId}`)
+        try {
+            const posterResponse = await axios.get(`/api/poster/${posterId}`)
             await this.setState({
-               poster: artistResponse.data
+               poster: posterResponse.data
+               
             })
         }
         catch (error) {
