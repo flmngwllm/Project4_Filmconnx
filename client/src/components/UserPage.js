@@ -4,30 +4,34 @@ import axios from 'axios'
 class UserPage extends Component {
 
     state = {
-        poster:{},
-        jobs: {},
-        user:{}
+        poster:{}
+        
                 }
 
     componentDidMount() {
+        this.getPoster()
+    }
 
-        axios.get('/api/jobs')
+    getPoster = () => {
+        axios.get('/api/poster')
              .then((res) => {
 
                 this.setState({
-                    jobs: res.data
+                    poster: res.data
                 })
                 console.log(res.data)
              })
-    }
 
+
+    }
 
 
 
     render() {
         return (
             <div>
-                hello girls
+
+               <h1> {this.state.poster.name}</h1>
             </div>
         );
     }

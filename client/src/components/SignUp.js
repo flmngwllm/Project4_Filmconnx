@@ -1,8 +1,6 @@
 import React from 'react';
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
-import { withRouter } from 'react-router-dom'
+import { Button, Form, FormGroup, Label, Input,} from 'reactstrap';
 import axios from 'axios'
-import styled from 'styled-components'
 import './SignUP.css';
 
 // const Postion = styled.div`
