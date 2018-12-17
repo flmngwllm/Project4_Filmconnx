@@ -58,7 +58,7 @@ class UserPage extends Component {
         const findJob = this.state.jobs.find(job =>{
           return job.id === jobId
         })
-        axios.patch(`/api/user/${id}/trip/${jobId}`, findJob).then(() => {
+        axios.patch(`/api/user/${id}/jobs/${jobId}`, findJob).then(() => {
           console.log("Updated Job")
         })
       }
