@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import axios from 'axios'
+import { Card} from 'reactstrap';
 
 class UserPage extends Component {
 
     state = {
-        poster: {}
+        poster: {},
+        jobs :{}
 
     }
 
@@ -17,27 +19,34 @@ class UserPage extends Component {
         const id = this.props.match.params.userId
         axios.get(`/api/poster/${id}/`).then(res => {
             console.log(res.data)
-            this.setState({ poster: res.data })
+            this.setState({ poster:res.data, jobs:res.data.jobs })
+            console.log(this.state.jobs)
         })
     }
 //make a call to display jobs 
 // api/poster/jobs
     getJobs = () => { 
         const id = this.params.match.params.userId
-        axios.get(`/api/`)
-        
-
+        axios.get(`/api/poster/${id}/jobs`).then(res => {
+            console.log(res.data)
+            this.setState({poster:res.data,jobs:res.data})
+        })
     }
+
+    
 
 
     render() {
         return (
             <div>
-
-                <h1> {this.state.poster.name}</h1>
-                {this.state.poster.email}
+                {this.state.poster.name}
                 <h1>User Name</h1>
-            </div>
+
+                  {this.state.jobs.company}
+
+
+                
+                </div>
         );
     }
 }
