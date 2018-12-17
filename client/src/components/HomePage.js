@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios'
+import { Button, FormGroup, FormControl, ControlLabel} from "reactstrap";
 
 class HomePage extends Component {
 
@@ -22,8 +23,13 @@ class HomePage extends Component {
 
     render() {
         return (
+  
             <div>
-                hello world
+
+                <h1>Jobs</h1>
+
+                <h1>{this.state.jobs.title}</h1>
+
             </div>
         );
     }
