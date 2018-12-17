@@ -40,6 +40,18 @@ class UserPage extends Component {
         })
       }
 
+      handleChange = (event, jobId) => {
+        const { value, name } = event.target
+        const newJobs =[...this.state.jobs]
+        const mapJob = newJobs.map(job =>{
+          if (job.id === jobId){
+          job[name] = value 
+          }
+          return job
+        })
+        this.setState({ jobs:mapJob })
+      }
+6
       handleDelete = (jobId) => {
         console.log(jobId)
         const id = this.props.match.params.userId
