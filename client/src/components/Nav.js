@@ -12,6 +12,8 @@ import {
   DropdownMenu,
   DropdownItem } from 'reactstrap';
 
+  
+
 export default class Example extends React.Component {
   constructor(props) {
     super(props);
@@ -39,6 +41,7 @@ export default class Example extends React.Component {
               </NavItem>
               <NavItem>
                 <NavLink href="/signup">Sign Up</NavLink>
+               
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>

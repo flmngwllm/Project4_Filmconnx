@@ -3,6 +3,13 @@ import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import './LoginPage.css';
 
 export default class Example extends React.Component {
+
+
+
+
+
+
+  
   render() {
     return (
       <div className = 'login' >

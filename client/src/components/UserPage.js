@@ -1,94 +1,76 @@
 import React, { Component } from 'react';
 import axios from 'axios'
-import { Card} from 'reactstrap';
+import { Card, CardBody, Input } from 'reactstrap';
 
 class UserPage extends Component {
 
     state = {
         poster: {},
-        jobs :{}
+        jobs: []
 
     }
 
     componentDidMount() {
+        this.getJobs()
         this.getPoster()
     }
- //make an api call to get a specific user
- ///api/poster/${id}
+    //make an api call to get a specific user
+    ///api/poster/${id}
     getPoster = () => {
         const id = this.props.match.params.userId
         axios.get(`/api/poster/${id}/`).then(res => {
             console.log(res.data)
-            this.setState({ poster:res.data, jobs:res.data.jobs })
-            console.log(this.state.jobs)
+            this.setState({ poster: res.data })
+
         })
     }
 
-    handleCreateNewJob = () => {
-        const id = this.props.match.params.userId
-        const payload = {
-          location: 'location',
-          company: 'company',
-          description: 'description',
-          time: 'time',
-          user: []
-        }
-        axios.post(`/api/user/${id}/jobs`, payload).then(res => {
-          const newJobs = res.data
-          const newStateJobs = [...this.state.jobs, newJobs]
-          this.setState({ trips: newStateJobs })
-        })
-      }
+    getJobs = () => {
+        axios.get(`/api/jobs/`).then(res => {
+            console.log('JOBS', res.data)
+            this.setState({ jobs: res.data })
 
-      handleChange = (event, jobId) => {
-        const { value, name } = event.target
-        const newJobs =[...this.state.jobs]
-        const mapJob = newJobs.map(job =>{
-          if (job.id === jobId){
-          job[name] = value 
-          }
-          return job
         })
-        this.setState({ jobs:mapJob })
-      }
-6
-      handleDelete = (jobId) => {
-        console.log(jobId)
-        const id = this.props.match.params.userId
-        axios.delete(`/api/user/${id}/jobs/${jobId}`).then(() => {
-        const newJobs = [...this.state.jobs]
-        const filterJob = newJobs.filter(job =>{
-          return job.id !== jobId
-        })
-    
-        this.setState({jobs: filterJob})
-        })
-      }
+    }
 
-      handleUpdate = (jobId) => {
-        const id = this.props.match.params.userId
-        const findJob = this.state.jobs.find(job =>{
-          return job.id === jobId
-        })
-        axios.patch(`/api/user/${id}/jobs/${jobId}`, findJob).then(() => {
-          console.log("Updated Job")
-        })
-      }
 
-    
+
 
 
     render() {
         return (
             <div>
-                {this.state.poster.name}
-                <h1>User Name</h1>
 
-                  {this.state.jobs.company}
 
+            {this.state.jobs.map(job => (
+                <div key = {job.id}>
+
+                <Card>
+
+                    <CardBody>
+
+                         <Input type="text" name="location" value ={job.location} />
+                        <Input type="text" name="company" value ={job.company} />
+                        <Input type="text" name="compenstaion" value ={job.compensation} />
+                        <Input type="time" name="time" value ={job.time} />
+                        <Input type="date" name="date" value ={job.date} />
+                        <button >delete</button>
+
+
+
+
+                    </CardBody>
+
+
+                </Card>
+                </div>
+                ))}
 
                 
-                </div>
+
+
+
+            </div>
         );
     }
 }
