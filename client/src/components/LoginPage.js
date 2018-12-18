@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import './LoginPage.css';
-import 'psycopg2'
+
 
 export default class Example extends React.Component {
 
