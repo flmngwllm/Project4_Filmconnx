@@ -26,6 +26,7 @@ class App extends Component {
              <Route exact path ="/signup" component = {SignUp}/>
              <Route exact path ="/user/:userId" component = {UserPage}/>
              
+             
 
           </Switch>
       </div>

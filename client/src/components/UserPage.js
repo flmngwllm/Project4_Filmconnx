@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios'
 import { Card, CardBody, Input } from 'reactstrap';
+import './UserPage.css';
 
 class UserPage extends Component {
 
@@ -11,7 +12,7 @@ class UserPage extends Component {
     }
 
     componentDidMount() {
-        this.getJobs()
+        // this.getJobs()
         this.getPoster()
     }
     //make an api call to get a specific user
@@ -20,19 +21,18 @@ class UserPage extends Component {
         const id = this.props.match.params.userId
         axios.get(`/api/poster/${id}/`).then(res => {
             console.log(res.data)
-            this.setState({ poster: res.data })
+            this.setState({ 
+                poster: res.data,
+                jobs: res.data.jobs })
 
         })
     }
 
-    getJobs = () => {
-        const poster = this.props.match.params.poster
-        axios.get(`/api/jobs/${poster}`).then(res => {
-            console.log('JOBS', res.data)
-            this.setState({ jobs: res.data })
+    jobdelete = () => {
+        axios.delete()
+        }
 
-        })
-    }
+  
 
     createJobs = () => {
         
@@ -64,7 +64,7 @@ class UserPage extends Component {
                 <div key = {job.id}>
 
               
-
+                <div className = 'jobcard' >
                 <Card>
 
                     <CardBody>
@@ -74,11 +74,14 @@ class UserPage extends Component {
                         <Input type="text" name="compenstaion" value ={job.compensation} />
                         <Input type="time" name="time" value ={job.time} />
                         <Input type="date" name="date" value ={job.date} />
+                        <Input type="text" name="poster" value ={job.poster} />
+
                         <button >delete</button>
                      </CardBody>
 
 
                 </Card>
+                </div>
                 </div>
                 ))}
 
