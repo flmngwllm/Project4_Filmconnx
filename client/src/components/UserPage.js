@@ -26,24 +26,44 @@ class UserPage extends Component {
     }
 
     getJobs = () => {
-        axios.get(`/api/jobs/`).then(res => {
+        const poster = this.props.match.params.poster
+        axios.get(`/api/jobs/${poster}`).then(res => {
             console.log('JOBS', res.data)
             this.setState({ jobs: res.data })
 
         })
     }
 
-
-
-
+    createJobs = () => {
+        
+        const payload = {
+        location: 'Location',
+        company: 'company',
+        Compensation: 'compensation',
+        weather: 'weather',
+        date: 'date',
+        poster: 'poster'
+        }
+        axios.post(`/api/jobs/`, payload).then (res => {
+            const newJobs = res.data
+            const newStateJobs = [...this.state.jobs, newJobs]
+            this.setState({jobs:newStateJobs})
+        })
+            
+    }
 
     render() {
         return (
             <div>
 
 
+             <button onClick= {this.createJobs}> POST JOB
+               </button>
+
             {this.state.jobs.map(job => (
                 <div key = {job.id}>
+
+              
 
                 <Card>
 
@@ -55,11 +75,7 @@ class UserPage extends Component {
                         <Input type="time" name="time" value ={job.time} />
                         <Input type="date" name="date" value ={job.date} />
                         <button >delete</button>
-
-
-
-
-                    </CardBody>
+                     </CardBody>
 
 
                 </Card>
