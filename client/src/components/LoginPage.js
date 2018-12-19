@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import './LoginPage.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 export default class Example extends React.Component {
