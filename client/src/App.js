@@ -6,16 +6,8 @@ import ApplicantPage from './components/ApplicantPage';
 import SignUp from './components/SignUp';
 import LandingPage from './components/LandingPage';
 import UserPage from './components/UserPage';
-<<<<<<< HEAD
-import JobApplicants from './components/JobApplicants';
-=======
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faIgloo } from '@fortawesome/free-solid-svg-icons'
+import JobApplicants from './components/JobApplicants'
 import Footer from './components/Footer';
-
-library.add(faIgloo)
->>>>>>> 2172c85b6f86ceed713da13bd71144bd0b3e96d4
 
 
 class App extends Component {

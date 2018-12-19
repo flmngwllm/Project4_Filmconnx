@@ -9,19 +9,31 @@ import axios from 'axios'
 class ApplicantPage extends Component {
 
     state = {
+        poster: {},
+        jobs: [],
+        user:{}
 
-      users: []
     }
 
-    componentDidMount() {
+    componentDidMount() {}
+    getUser = () => {
+        const id = this.props.match.params.id
+        axios.get(`/api/user/${id}/`).then(res => {
+            console.log(res.data)
+            this.setState({ 
+                user: res.data.user})
 
-        axios.get(`/api/users/${id}`)
-            .then(res => {
-
-                console.log(res.data)
-                this.setState({ users: res.data})
-            })
+        })
     }
+
+
+
+    
+
+
+
+
+
     render() {
         return (
             <div>

@@ -24,7 +24,7 @@ class UserPage extends Component {
             console.log(res.data)
             this.setState({ 
                 poster: res.data,
-                jobs: res.data.jobs })
+                jobs: res.data.jobs, user: res.data.user})
 
         })
     }
