@@ -18,7 +18,7 @@ class UserPage extends Component {
     //make an api call to get a specific user
     ///api/poster/${id}
     getPoster = () => {
-        const id = this.props.match.params.userId
+        const id = this.props.match.params.id
         axios.get(`/api/poster/${id}/`).then(res => {
             console.log(res.data)
             this.setState({ 
@@ -28,29 +28,56 @@ class UserPage extends Component {
         })
     }
 
-    jobdelete = () => {
-        axios.delete()
-        }
+    jobDelete = (jobId) => {
+        console.log(jobId)
+        const id = jobId
+        axios.delete(`/api/jobs/${id}`).then(()=>{
+            this.getPoster()
+        })
+      }
+
+      jobUpdate = (payload) => {
+        axios.patch(`/api/jobs/${payload.id}/`,payload ).then(() => {
+
+          console.log("Updated Job")
+        })
+      }
+      handleChange = (event, jobId) => {
+        const { value, name } = event.target
+        const newJobs =[...this.state.jobs]
+        const mapJob = newJobs.map(job =>{
+          if (job.id === jobId){
+          job[name] = value 
+          }
+          return job
+        })
+        this.setState({ jobs:mapJob })
+      }       
+
 
   
 
-    createJobs = () => {
-        
+      createJobs = () => {
+          const poster = this.state.poster.id
         const payload = {
-        location: 'Location',
-        company: 'company',
-        Compensation: 'compensation',
-        weather: 'weather',
-        date: 'date',
-        poster: 'poster'
+            location: 'location',
+            company: 'company',
+            compensation: 'compensation',
+            description: "description",
+            date: 'date',
+            poster: poster
+    
         }
-        axios.post(`/api/jobs/`, payload).then (res => {
-            const newJobs = res.data
-            const newStateJobs = [...this.state.jobs, newJobs]
-            this.setState({jobs:newStateJobs})
+        axios.post(`/api/jobs/`, payload).then(res => {
+          const newJobs = res.data
+          const newStateJobs = [...this.state.jobs, newJobs]
+          this.setState({ jobs: newStateJobs })
         })
-            
-    }
+      }
+
+
+
+      
 
     render() {
         return (
@@ -69,14 +96,13 @@ class UserPage extends Component {
 
                     <CardBody>
 
-                         <Input type="text" name="location" value ={job.location} />
-                        <Input type="text" name="company" value ={job.company} />
-                        <Input type="text" name="compenstaion" value ={job.compensation} />
-                        <Input type="time" name="time" value ={job.time} />
-                        <Input type="date" name="date" value ={job.date} />
-                        <Input type="text" name="poster" value ={job.poster} />
+                        <Input onBlur={ () => this.jobUpdate(job)} type="text" onChange={(event) => this.handleChange(event, job.id)} name="location" value ={job.location} />
+                        <Input onBlur={ () => this.jobUpdate(job)} type="text" onChange={(event) => this.handleChange(event, job.id)} type="text" name="company" value ={job.company} />
+                        <Input onBlur={ () => this.jobUpdate(job)} type="text" onChange={(event) => this.handleChange(event, job.id)} type="text" name="compenstaion" value ={job.compensation} />
+                        <Input onBlur={ () => this.jobUpdate(job)} type="text" onChange={(event) => this.handleChange(event, job.id)}  type="datetime-local" name="time" value ={job.time} />                      
+                        <Input onBlur={ () => this.jobUpdate(job)} type="text" onChange={(event) => this.handleChange(event, job.id)} type="text" name="poster" value ={job.poster} />
 
-                        <button >delete</button>
+                        <button onClick={() => this.jobDelete(job.id)} >delete</button>
                      </CardBody>
 
 
