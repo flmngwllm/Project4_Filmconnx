@@ -43,7 +43,7 @@ export default class Example extends React.Component {
   render() {
     return (
       <div className='signup' >
-      <Card>
+      <Card className = "cardsignup">
         <Form onSubmit={this.handleSubmit}>
           <FormGroup >
             <Label htmlfor="email">Email</Label>

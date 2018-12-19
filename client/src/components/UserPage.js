@@ -110,13 +110,14 @@ class UserPage extends Component {
                         <Input onBlur={ () => this.jobUpdate(job)} type="text" onChange={(event) => this.handleChange(event, job.id)} type="text" name="compenstaion" value ={job.compensation} />
                         <Input onBlur={ () => this.jobUpdate(job)} type="text" onChange={(event) => this.handleChange(event, job.id)}  type="datetime-local" name="time" value ={job.time} />                      
                         <Input onBlur={ () => this.jobUpdate(job)} type="text" onChange={(event) => this.handleChange(event, job.id)} type="text" name="description" value ={job.description} />
+                    </CardBody>
 
-                        <Button outline color= "danger" onClick={() => this.jobDelete(job.id)} >delete</Button>
-                     
-                     
-                     </CardBody>
+                    <CardBody>
+                       
+                    </CardBody>
 
 
+                   <Button outline color= "danger" onClick={() => this.jobDelete(job.id)} >delete</Button>
                 </Card>
                 
                 </div>
