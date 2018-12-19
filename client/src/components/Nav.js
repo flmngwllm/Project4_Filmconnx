@@ -46,7 +46,7 @@ export default class Example extends React.Component {
               </NavItem>
 
               <NavItem>
-                <NavLink href="/applicants">Hire</NavLink>
+                <NavLink href="/applicant/:appId">Hire</NavLink>
                
               </NavItem>
               <UncontrolledDropdown nav inNavbar>

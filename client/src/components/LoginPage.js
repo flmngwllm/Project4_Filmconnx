@@ -3,7 +3,6 @@ import { Button, Form, FormGroup, Label, Input,Jumbotron, Container } from 'reac
 import './LoginPage.css';
 
 
-
 export default class Example extends React.Component {
 
   
