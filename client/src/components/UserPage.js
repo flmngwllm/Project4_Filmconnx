@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios'
-import { Card, CardBody, Input, Button } from 'reactstrap';
+import { Card, CardBody, Input, Button,CardTitle,CardSubtitle,CardGroup } from 'reactstrap';
 import './UserPage.css';
 
 class UserPage extends Component {
@@ -8,7 +8,7 @@ class UserPage extends Component {
     state = {
         poster: {},
         jobs: [],
-        user:[]
+        user:{}
 
     }
 
@@ -28,6 +28,8 @@ class UserPage extends Component {
 
         })
     }
+
+
 
     jobDelete = (jobId) => {
         console.log(jobId)
@@ -84,9 +86,8 @@ class UserPage extends Component {
         return (
             <div>
 
-             <div className = "Post Job">
-             <Button outline color= "sucess" onClick= {this.createJobs}> Create Job
-               </Button>
+             <div className = "PostJob">
+             <Button outline color= "sucess" onClick= {this.createJobs}> Create Job </Button>
                </div>
 
             {this.state.jobs.map(job => (
@@ -94,15 +95,21 @@ class UserPage extends Component {
 
               
                 <div className = 'jobcard' >
+              
+              
                 <Card>
 
                     <CardBody>
-
+                    <CardTitle>{this.state.poster.name}</CardTitle>
+                    <CardSubtitle>{this.state.poster.email}</CardSubtitle>
+                    </CardBody>
+                    
+                     <CardBody>
                         <Input onBlur={ () => this.jobUpdate(job)} type="text" onChange={(event) => this.handleChange(event, job.id)} name="location" value ={job.location} />
                         <Input onBlur={ () => this.jobUpdate(job)} type="text" onChange={(event) => this.handleChange(event, job.id)} type="text" name="company" value ={job.company} />
                         <Input onBlur={ () => this.jobUpdate(job)} type="text" onChange={(event) => this.handleChange(event, job.id)} type="text" name="compenstaion" value ={job.compensation} />
                         <Input onBlur={ () => this.jobUpdate(job)} type="text" onChange={(event) => this.handleChange(event, job.id)}  type="datetime-local" name="time" value ={job.time} />                      
-                        <Input onBlur={ () => this.jobUpdate(job)} type="text" onChange={(event) => this.handleChange(event, job.id)} type="text" name="poster" value ={job.poster} />
+                        <Input onBlur={ () => this.jobUpdate(job)} type="text" onChange={(event) => this.handleChange(event, job.id)} type="text" name="description" value ={job.description} />
 
                         <Button outline color= "danger" onClick={() => this.jobDelete(job.id)} >delete</Button>
                      
@@ -111,6 +118,7 @@ class UserPage extends Component {
 
 
                 </Card>
+                
                 </div>
                 </div>
                 ))}
