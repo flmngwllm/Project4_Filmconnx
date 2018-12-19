@@ -30,7 +30,7 @@ class App extends Component {
              <Route exact path="/" component={LoginPage}/>
              
              <Route exact path ="/applicant/:appId" component ={ApplicantPage}/>
-             <Route exact path="/" component={LoginPage}/>
+             
              <Route exact path ="/signup" component = {SignUp}/>
              <Route exact path ="/poster/:id" component = {UserPage}/>
              
