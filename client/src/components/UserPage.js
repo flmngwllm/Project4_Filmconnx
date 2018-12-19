@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import axios from 'axios'
-import { Card, CardBody, Input } from 'reactstrap';
+import { Card, CardBody, Input, Button } from 'reactstrap';
 import './UserPage.css';
 
 class UserPage extends Component {
 
     state = {
         poster: {},
-        jobs: []
+        jobs: [],
+        user:[]
 
     }
 
@@ -83,9 +84,10 @@ class UserPage extends Component {
         return (
             <div>
 
-
-             <button onClick= {this.createJobs}> POST JOB
-               </button>
+             <div className = "Post Job">
+             <Button outline color= "sucess" onClick= {this.createJobs}> Create Job
+               </Button>
+               </div>
 
             {this.state.jobs.map(job => (
                 <div key = {job.id}>
@@ -102,7 +104,9 @@ class UserPage extends Component {
                         <Input onBlur={ () => this.jobUpdate(job)} type="text" onChange={(event) => this.handleChange(event, job.id)}  type="datetime-local" name="time" value ={job.time} />                      
                         <Input onBlur={ () => this.jobUpdate(job)} type="text" onChange={(event) => this.handleChange(event, job.id)} type="text" name="poster" value ={job.poster} />
 
-                        <button onClick={() => this.jobDelete(job.id)} >delete</button>
+                        <Button outline color= "danger" onClick={() => this.jobDelete(job.id)} >delete</Button>
+                     
+                     
                      </CardBody>
 
 
