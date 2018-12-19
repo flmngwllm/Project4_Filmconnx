@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Card, CardImg, CardText, CardBody,
-    CardTitle, Button } from 'reactstrap';
+import { Card,  CardBody,
+    CardTitle,} from 'reactstrap';
   
 import './ApplicantPage.css';
 import axios from 'axios'
