@@ -19,3 +19,6 @@ this is our structure.
 Job poster and Users both have a many relationship with Jobs.
 
 
+https://trello.com/b/pMrLPPFy/flimconxx
+
+
