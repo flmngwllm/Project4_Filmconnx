@@ -1,0 +1,20 @@
+.jobcard  {
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border: solid #54b0b9;
+    border: solid gold;
+    height: 270px ;
+    width: 300px;
+    box-shadow: 10px 10px grey;
+    
+}
+
+.PostJob{
+    display: flex;
+    justify-content: center;
+
+    
+
+}

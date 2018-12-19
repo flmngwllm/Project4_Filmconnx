@@ -11,6 +11,9 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem } from 'reactstrap';
+  import './Nav.css';
+
+  
 
 export default class Example extends React.Component {
   constructor(props) {
@@ -28,17 +31,23 @@ export default class Example extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className = "Nav" >
         <Navbar color="light" light expand="md">
           <NavbarBrand href="/">FILMCONNX</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/loginpage">Login</NavLink>
+                <NavLink href="/">Login</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="/signup">Sign Up</NavLink>
+               
+              </NavItem>
+
+              <NavItem>
+                <NavLink href="/applicant/:appId">Hire</NavLink>
+               
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
@@ -46,14 +55,14 @@ export default class Example extends React.Component {
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
-                    Option 1
+                    Contact Us
                   </DropdownItem>
                   <DropdownItem>
-                    Option 2
+                    Help
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
-                    Reset
+                    Log Out
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>

@@ -1,29 +1,61 @@
 import React, { Component } from 'react';
-import { Card, CardImg, CardText, CardBody,
-    CardTitle, Button } from 'reactstrap';
+import {
+    Card, CardImg, CardText, CardBody,
+    CardTitle, Button
+} from 'reactstrap';
   
 import './ApplicantPage.css';
+import axios from 'axios'
 
 
 class ApplicantPage extends Component {
+
+    state = {
+        users:{}
+
+        
+    }
+
+    componentDidMount() {
+        const id = this.props.match.params.appId
+        axios.get(`/api/users/${id}`)
+            .then(res => {
+                console.log(res.data)
+                this.setState({ users: res.data })
+            })
+    }
     render() {
         return (
             <div>
 
-                <Card>
-        <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
-        <CardBody>
-          <CardTitle>Card Title</CardTitle>
-          <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
-          <CardText>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </CardText>
-        </CardBody>
-      </Card>
+                <Card> 
 
-      <Button color="primary">primary</Button>{' '}
-               
-          
+                       
+                   <CardBody className="applicant"> 
+                        <h2> {this.state.users.name} </h2>
+                        <img className="img" src={this.state.users.photo} alt="" srcset=""/>
+
+
+
+                        <h3 className="cardDets">Email</h3>
+                       <CardText> {this.state.users.email} </CardText>
+
+                        <h3 className="cardDets">Location</h3>
+                       <CardText> {this.state.users.location} </CardText>
+
+                        <h3 className="cardDets">Projects</h3>
+                       <CardText> {this.state.users.projects} </CardText>
+
+                        <h3 className="cardDets">Zip Code</h3>
+                       <CardText> {this.state.users.zipcode} </CardText>
+
+                        <h3 className="cardDets">Bio</h3>
+                       <CardText> {this.state.users.bio} </CardText>
+
+
+                   </CardBody>
+
+                </Card>
 
             </div>
         );
