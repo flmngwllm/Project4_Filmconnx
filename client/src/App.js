@@ -9,6 +9,7 @@ import UserPage from './components/UserPage';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faIgloo } from '@fortawesome/free-solid-svg-icons'
+import Footer from './components/Footer';
 
 library.add(faIgloo)
 
@@ -33,8 +34,11 @@ class App extends Component {
              
              
              
+             
 
           </Switch>
+          <Footer/>
+          
       </div>
     </Router>
     );

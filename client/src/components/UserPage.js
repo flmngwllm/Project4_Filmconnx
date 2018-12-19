@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios'
-import { Card, CardBody, Input, Button,CardTitle,CardSubtitle,CardGroup } from 'reactstrap';
+import { Card, CardBody, Input, Button,CardTitle,CardSubtitle,} from 'reactstrap';
 import './UserPage.css';
 
 class UserPage extends Component {

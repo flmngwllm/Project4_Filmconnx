@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Form, FormGroup, Label, Input, } from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input,Card } from 'reactstrap';
 import axios from 'axios'
 import './SignUP.css';
 
@@ -43,6 +43,7 @@ export default class Example extends React.Component {
   render() {
     return (
       <div className='signup' >
+      <Card>
         <Form onSubmit={this.handleSubmit}>
           <FormGroup >
             <Label htmlfor="email">Email</Label>
@@ -77,6 +78,7 @@ export default class Example extends React.Component {
 
 
         </Form>
+        </Card>
 
       </div>
 
