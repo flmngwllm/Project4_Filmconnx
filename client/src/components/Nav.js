@@ -44,6 +44,11 @@ export default class Example extends React.Component {
                 <NavLink href="/signup">Sign Up</NavLink>
                
               </NavItem>
+
+              <NavItem>
+                <NavLink href="/applicants">Hire</NavLink>
+               
+              </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
                   Options

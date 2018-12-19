@@ -4,6 +4,9 @@ import {
     CardTitle, Button
 } from 'reactstrap';
 
+import { Card,  CardBody,
+    CardTitle,} from 'reactstrap';
+  
 import './ApplicantPage.css';
 import axios from 'axios'
 
@@ -11,6 +14,7 @@ import axios from 'axios'
 class ApplicantPage extends Component {
 
     state = {
+        user:{}
 
         users: {}
     }

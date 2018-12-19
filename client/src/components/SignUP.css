@@ -3,5 +3,14 @@
 display: flex;
 justify-content:center;
 align-items:center;
-border: black;
+
+
+}
+
+.cardsignup{
+
+    border: solid black;
+
+
+
 }

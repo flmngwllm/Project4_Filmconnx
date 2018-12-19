@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios'
-import { Card, CardBody, Input, Button,CardTitle,CardSubtitle,CardGroup } from 'reactstrap';
+import { Card, CardBody, Input, Button,CardTitle,CardSubtitle,} from 'reactstrap';
 import './UserPage.css';
 
 class UserPage extends Component {
@@ -24,7 +24,7 @@ class UserPage extends Component {
             console.log(res.data)
             this.setState({ 
                 poster: res.data,
-                jobs: res.data.jobs })
+                jobs: res.data.jobs, user: res.data.user})
 
         })
     }
@@ -97,7 +97,7 @@ class UserPage extends Component {
                 <div className = 'jobcard' >
               
               
-                <Card>
+                <Card >
 
                     <CardBody>
                     <CardTitle>{this.state.poster.name}</CardTitle>
@@ -110,13 +110,15 @@ class UserPage extends Component {
                         <Input onBlur={ () => this.jobUpdate(job)} type="text" onChange={(event) => this.handleChange(event, job.id)} type="text" name="compenstaion" value ={job.compensation} />
                         <Input onBlur={ () => this.jobUpdate(job)} type="text" onChange={(event) => this.handleChange(event, job.id)}  type="datetime-local" name="time" value ={job.time} />                      
                         <Input onBlur={ () => this.jobUpdate(job)} type="text" onChange={(event) => this.handleChange(event, job.id)} type="text" name="description" value ={job.description} />
+                    </CardBody>
 
-                        <Button outline color= "danger" onClick={() => this.jobDelete(job.id)} >delete</Button>
-                     
-                     
-                     </CardBody>
+                    <CardBody>
+                        <Input value = {job.user} >  </Input>
+                       
+                    </CardBody>
 
 
+                   <Button outline color= "danger" onClick={() => this.jobDelete(job.id)} >delete</Button>
                 </Card>
                 
                 </div>
