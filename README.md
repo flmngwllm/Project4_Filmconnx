@@ -12,3 +12,10 @@ Job's
 
 User
 
+![image of erd](images/erd.png)
+
+this is our structure.
+
+Job poster and Users both have a many relationship with Jobs.
+
+
