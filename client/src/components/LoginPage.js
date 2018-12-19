@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import './LoginPage.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 export default class Example extends React.Component {
@@ -8,20 +9,21 @@ export default class Example extends React.Component {
   
   render() {
     return (
-      <div className = 'login' >
-      <Form inline>
-        <FormGroup>
-          <Label for="exampleEmail" hidden>Email</Label>
-          <Input type="email" name="email" id="exampleEmail" placeholder="Email" />
+      <div className = "login">
+      <Form >
+        <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
+          <Label for="exampleEmail" className="mr-sm-2">Email</Label>
+          <Input type="email" name="email" id="exampleEmail" placeholder="something@idk.cool" />
         </FormGroup>
-        {' '}
-        <FormGroup>
-          <Label for="examplePassword" hidden>Password</Label>
-          <Input type="password" name="password" id="examplePassword" placeholder="Password" />
+        <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
+          <Label for="examplePassword" className="mr-sm-2">Password</Label>
+          <Input type="password" name="password" id="examplePassword" placeholder="don't tell!" />
         </FormGroup>
-        {' '}
         <Button>Submit</Button>
-      </Form></div>
+        
+        
+      </Form>
+      </div>
     );
   }
 }
