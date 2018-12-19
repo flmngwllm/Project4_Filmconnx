@@ -21,4 +21,8 @@ Job poster and Users both have a many relationship with Jobs.
 
 https://trello.com/b/pMrLPPFy/flimconxx
 
+![image of erd](images/1.jpg)
+![image of erd](images/2.jpg)
+![image of erd](images/3.jpg)
+
 
