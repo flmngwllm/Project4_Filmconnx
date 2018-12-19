@@ -3,26 +3,114 @@ import { Card, CardImg, CardText, CardBody,
     CardTitle, Button } from 'reactstrap';
   
 import './ApplicantPage.css';
+import axios from 'axios'
 
 
 class ApplicantPage extends Component {
+
+    state = {
+
+      users: []
+    }
+
+    componentDidMount() {
+
+        axios.get(`/api/users/${id}`)
+            .then(res => {
+
+                console.log(res.data)
+                this.setState({ users: res.data})
+            })
+    }
     render() {
         return (
             <div>
 
+            
                 <Card>
-        <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
-        <CardBody>
-          <CardTitle>Card Title</CardTitle>
-          <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
-          <CardText>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </CardText>
-        </CardBody>
-      </Card>
+                    <CardBody>
+                        <CardTitle>{this.state.users.map((user) =>(
 
-      <Button color="primary">primary</Button>{' '}
-               
+                            <div> 
+                                <img src={user.photo} alt=""/>
+
+                            </div>
+
+
+                            ))}
+                        </CardTitle>
+
+                     <CardTitle>{this.state.users.map((user) =>(
+
+                            <div> 
+
+                                <h3>Profile Name</h3>
+                                {user.name}
+
+                            </div>
+                    
+
+                     ))}
+                     </CardTitle>
+
+                       <CardTitle>{this.state.users.map((user) =>(
+
+                            <div> 
+
+                                <h3>Projects</h3>
+                                {user.projects}
+
+                            </div>
+
+
+                            ))}
+                        </CardTitle>
+
+                              <CardTitle>{this.state.users.map((user) =>(
+
+                                <div> 
+
+                                    <h3>Zip Code</h3>
+                                    {user.zipcode}
+
+                                </div>
+
+
+                                ))}
+                         </CardTitle>
+
+                         <CardTitle>{this.state.users.map((user) =>(
+
+                                        <div> 
+
+                                            <h3>Email</h3>
+                                            {user.email}
+
+                                        </div>
+
+
+                                        ))}
+                        </CardTitle>
+
+                          <CardTitle>{this.state.users.map((user) =>(
+
+                                <div> 
+
+                                    <h3>Bio</h3>
+                                    {user.bio}
+
+                                </div>
+
+
+                                ))}
+                          </CardTitle>
+
+
+                     </CardBody>
+
+                </Card>
+
+
           
 
             </div>

@@ -6,6 +6,7 @@ import ApplicantPage from './components/ApplicantPage';
 import SignUp from './components/SignUp';
 import LandingPage from './components/LandingPage';
 import UserPage from './components/UserPage';
+import JobApplicants from './components/JobApplicants';
 
 
 class App extends Component {
