@@ -6,6 +6,11 @@ import ApplicantPage from './components/ApplicantPage';
 import SignUp from './components/SignUp';
 import LandingPage from './components/LandingPage';
 import UserPage from './components/UserPage';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faIgloo } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faIgloo)
 
 
 class App extends Component {
@@ -24,8 +29,8 @@ class App extends Component {
              <Route exact path ="/loginpage" component={LoginPage}/>
              <Route exact path ="/applicants" component ={ApplicantPage}/>
              <Route exact path ="/signup" component = {SignUp}/>
-             <Route exact path ="/user/:id" component = {UserPage}/>
-             <Route exact path ="/jobs/:id" component = {UserPage}/>
+             <Route exact path ="/poster/:id" component = {UserPage}/>
+             
              
              
 
