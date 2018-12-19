@@ -97,7 +97,7 @@ class UserPage extends Component {
                 <div className = 'jobcard' >
               
               
-                <Card>
+                <Card >
 
                     <CardBody>
                     <CardTitle>{this.state.poster.name}</CardTitle>
@@ -113,6 +113,7 @@ class UserPage extends Component {
                     </CardBody>
 
                     <CardBody>
+                        <Input value = {job.user} >  </Input>
                        
                     </CardBody>
 

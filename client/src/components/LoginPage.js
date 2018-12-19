@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Form, FormGroup, Label, Input,Jumbotron, Container } from 'reactstrap';
 import './LoginPage.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 
 export default class Example extends React.Component {
@@ -10,9 +10,9 @@ export default class Example extends React.Component {
   render() {
     return (
       <div>
-      <div className = "Jumbo">
+      <div >
       <Jumbotron  fluid>
-        <Container   fluid>
+        <Container  className = "Jumbo"  fluid>
           <h1 className="display-3">FilmCONNX</h1>
           <p className="lead">Finding you the professionals you need.</p>
         </Container>
