@@ -1,11 +1,6 @@
 import React from 'react';
 import { Button, Form, FormGroup, Label, Input,Jumbotron, Container } from 'reactstrap';
 import './LoginPage.css';
-<<<<<<< HEAD
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-=======
-
->>>>>>> 666a1ba69c2001476961617a446a7ff943e34fd9
 
 
 export default class Example extends React.Component {
